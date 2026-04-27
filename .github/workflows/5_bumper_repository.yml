@@ -45,7 +45,7 @@ jobs:
       CI_COMMIT_AUTHOR: Test Bumper
       CI_COMMIT_EMAIL: test-bumper@example.com
       CI_GPG_PRIVATE_KEY: ${{ secrets.CI_WAZUHCI_GPG_PRIVATE }}
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Changed to github token to testing
+      GH_TOKEN: ${{ secrets.CI_WAZUHCI_BUMPER_TOKEN }} # Changed to github token to testing
       BUMP_SCRIPT_PATH: tools/repository_bumper.sh
       BUMP_LOG_PATH: tools/
 
